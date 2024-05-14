@@ -15,10 +15,5 @@ pub struct Response {
 }
 
 pub fn send_response(response: Response) -> Json<Response> {
-  Json::<Response>(Response {
-    success: response.success,
-    message: response.message,
-    status: response.status,
-    response: response.response
-  })
+  Json::<Response>(response)
 }

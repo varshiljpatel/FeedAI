@@ -1,6 +1,7 @@
 use axum::Json;
 use serde::{Deserialize, Serialize};
 use crate::actions::{generate_prompt::generate_prompt, response::{send_response, Response, SendResponse}};
+use crate::repository::gen_ai;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Prompt {
@@ -17,12 +18,16 @@ pub async fn handle_generate(Json(body): Json<Prompt>) -> Json<Response> {
     });
   }
   let updataed_prompt: String = generate_prompt(body.text);
+
+  // Generate an api response from gen_ai repository
+  let api_response = gen_ai::generate_response_from_prompt(updataed_prompt).await;
+
   send_response(Response {
     message: None,
     status: 200,
     success: false,
     response: Some(SendResponse {
-      text: Some(String::from(updataed_prompt))
+      text: Some(String::from(api_response))
     })
   })
 }
