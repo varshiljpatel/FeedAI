@@ -1,4 +1,4 @@
-import { ISendResponse } from "./types";
+import { ISendResponse } from "../types";
 
 export interface ISendResponseOptions {
 	text: string;

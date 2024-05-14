@@ -11,7 +11,7 @@ export async function generateResponse(d: IGenerateBody) {
 
 	try {
 		let response: AxiosResponse = await axios.post(url, data);
-		if (response.status === 200) {
+		if (response.status != 200) {
 			return sendResponse({
 				text: "Failed to fetch response.",
 				success: false,

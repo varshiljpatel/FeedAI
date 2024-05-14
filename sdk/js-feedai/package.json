@@ -1,6 +1,6 @@
 {
 	"name": "@ascen/feedai",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "A feed ai sdk for javascript runtime",
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
@@ -9,8 +9,9 @@
 		"./dist/"
 	],
 	"scripts": {
-		"postversion": "git push && npm publish",
-    "test": "bun run ./types/index.test.ts"
+		"postversion": "tsc -p . && npm publish",
+		"build": "tsc -p .",
+    "test": "ts-node ./types/index.test.ts"
 	},
 	"publishConfig": {
 		"access": "public",
