@@ -1,0 +1,34 @@
+{
+	"name": "@ascen/feedai",
+	"version": "1.0.0",
+	"description": "A feed ai sdk for javascript runtime",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+  "exports": "./dist/index.js",
+	"files": [
+		"./dist/"
+	],
+	"scripts": {
+		"postversion": "git push && npm publish",
+    "test": "bun run ./types/index.test.ts"
+	},
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	},
+	"keywords": [
+		"ai",
+		"feed"
+	],
+	"author": "ascen",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/node": "^20.12.12",
+		"nodemon": "^3.1.0",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.4.5"
+	},
+	"dependencies": {
+		"axios": "^1.6.8"
+	}
+}
