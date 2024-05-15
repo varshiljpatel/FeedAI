@@ -1,20 +1,27 @@
 {
-  "name": "feed-ai",
-  "version": "0.0.1",
-  "description": "A cli based ai coder.",
-  "main": "/app",
-  "workspaces": [
-    "/apps/**"
-  ],
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "ai",
-    "coder",
-    "feed",
-    "feedai"
-  ],
-  "author": "ascen",
-  "license": "ISC"
+    "name": "feed-ai",
+    "workspaces": [
+        "/apps/"
+    ],
+    "keywords": [
+        "ai",
+        "coder",
+        "feed",
+        "feedai"
+    ],
+    "author": "ascen",
+    "license": "ISC",
+    "devDependencies": {
+        "@ascen/awesome": "^1.2.0",
+        "@commitlint/cli": "^19.3.0",
+        "@commitlint/config-conventional": "^19.2.2",
+        "lint-staged": "^15.2.2",
+        "prettier": "^3.2.5"
+    },
+    "lint-staged": {
+        "*": "prettier --write --ignore-unknown"
+    },
+    "scripts": {
+        "prepare": "awesome init"
+    }
 }
