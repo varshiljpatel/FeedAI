@@ -9,7 +9,7 @@ pub struct Prompt {
     issue: String
 }
 
-pub async fn handle_generate(Json(body): Json<Prompt>) -> Json<Response> {
+pub async fn handle_solve(Json(body): Json<Prompt>) -> Json<Response> {
   if body.code.trim().is_empty() || body.issue.trim().is_empty() {
     return send_response(Response {
       status: 400,

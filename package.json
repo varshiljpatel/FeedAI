@@ -1,8 +1,6 @@
 {
     "name": "feed-ai",
-    "workspaces": [
-        "/apps/"
-    ],
+    "version": "1",
     "keywords": [
         "ai",
         "coder",
