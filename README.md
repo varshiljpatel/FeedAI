@@ -53,3 +53,16 @@
 <h3>Example:</h3>
 
 <code>feed_ai --file demo.js --issue "',' expected"</code>
+
+<h3>Help:</h3>
+
+<p>Run <code>feed_ai --help</code> command for getting help.</p>
+
+<code>
+Usage
+  $ mycli --file <filename> --issue <text>
+
+Options
+  --file, -f  Filename
+  --issue, -i  Issue to write in the file
+</code>
