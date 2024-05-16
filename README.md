@@ -1,9 +1,4 @@
-<style>.gray {
-  color: gray;
-}</style>
-
-<h2 style="text-align: center;">Feed_AI</h2>
-
+<h2 align="center">Feed_AI ⚪</h2>
 <h3>Usage:</h3>
 
 <p>Add required env variables in <code>.env</code> files.</p>
@@ -38,11 +33,9 @@
 
 <h3>Execute:</h3>
 
-<code>
-  feed_ai --file &lt;filename&gt; --issue &lt;issue&gt;
-</code>
-
-<br />
+```
+feed_ai --file &lt;filename&gt; --issue &lt;issue&gt;
+```
 
 <h5>Options:</h5>
 
@@ -50,7 +43,23 @@
   <li><i>&lt;filename&gt;</i>:</li>
   <p class="gray">Filename in which error is occured.</p>
   <p style="color: yellow;">Note: mentioning file extension is required.</p>
-  <br />
   <li><i>&lt;issue&gt;</i>:</li>
   <p class="gray">Issue to be occured in &lt;filename&gt;.</p>
 </ul>
+
+<h3>Example:</h3>
+
+<code>feed_ai --file demo.js --issue "',' expected"</code>
+
+<h3>Help:</h3>
+
+<p>Run <code>feed_ai --help</code> command for getting help.</p>
+
+```
+Usage
+  $ feed_ai --file &lt;filename> --issue &lt;issue>
+
+Options
+  --file, -f  Filename
+  --issue, -i  Issue to write in the file
+```
