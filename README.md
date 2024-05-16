@@ -1,4 +1,4 @@
-## Feed_AI ⚪
+<p align="center">Feed_AI ⚪</p>
 <h3>Usage:</h3>
 
 <p>Add required env variables in <code>.env</code> files.</p>
