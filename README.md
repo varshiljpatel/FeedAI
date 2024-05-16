@@ -43,7 +43,6 @@ feed_ai --file &lt;filename&gt; --issue &lt;issue&gt;
   <li><i>&lt;filename&gt;</i>:</li>
   <p class="gray">Filename in which error is occured.</p>
   <p style="color: yellow;">Note: mentioning file extension is required.</p>
-  <br />
   <li><i>&lt;issue&gt;</i>:</li>
   <p class="gray">Issue to be occured in &lt;filename&gt;.</p>
 </ul>
