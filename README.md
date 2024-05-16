@@ -1,4 +1,4 @@
-<h2>Feed_AI•<h2>
+<h2>Feed_AI •<h2>
 <h3>Usage:</h3>
 
 <p>Add required env variables in <code>.env</code> files.</p>
