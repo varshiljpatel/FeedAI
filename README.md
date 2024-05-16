@@ -59,10 +59,10 @@
 <p>Run <code>feed_ai --help</code> command for getting help.</p>
 
 <code>
-Usage
+Usage<br />
   $ feed_ai --file &lt;filename> --issue &lt;issue>
 
-Options\n
+Options<br />
   --file, -f  Filename
   --issue, -i  Issue to write in the file
 </code>
