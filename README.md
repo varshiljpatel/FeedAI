@@ -33,10 +33,9 @@
 
 <h3>Execute:</h3>
 
-<code>
-  feed_ai --file &lt;filename&gt; --issue &lt;issue&gt;
-</code>
-
+```
+feed_ai --file &lt;filename&gt; --issue &lt;issue&gt;
+```
 <br />
 
 <h5>Options:</h5>
