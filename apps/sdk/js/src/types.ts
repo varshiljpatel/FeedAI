@@ -1,10 +1,11 @@
 export interface IGenerateBody {
-  text: string;
+    code: string;
+    issue: string;
 }
 
 export interface ISendResponse {
-  content: {
-    text: string
-  };
-  success: boolean;
+    content: {
+        text: string;
+    };
+    success: boolean;
 }
