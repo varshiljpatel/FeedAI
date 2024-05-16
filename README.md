@@ -60,7 +60,7 @@
 
 <code>
 Usage
-  $ mycli --file <filename> --issue <text>
+  $ feed_ai --file &lt;filename> --issue &lt;issue>
 
 Options
   --file, -f  Filename
