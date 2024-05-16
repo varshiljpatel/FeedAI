@@ -62,7 +62,7 @@
 Usage
   $ feed_ai --file &lt;filename> --issue &lt;issue>
 
-Options
+Options\n
   --file, -f  Filename
   --issue, -i  Issue to write in the file
 </code>
