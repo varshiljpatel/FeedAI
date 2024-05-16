@@ -58,11 +58,11 @@
 
 <p>Run <code>feed_ai --help</code> command for getting help.</p>
 
-<code>
-Usage<br />
+'''
+Usage
   $ feed_ai --file &lt;filename> --issue &lt;issue>
 
-Options<br />
+Options
   --file, -f  Filename
   --issue, -i  Issue to write in the file
-</code>
+'''
