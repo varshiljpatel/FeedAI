@@ -1,4 +1,4 @@
-<h2 style="text-align: center;">Feed_AI</h2>
+<center style="text-align: center;">Feed_AI<center>
 
 <h3>Usage:</h3>
 
