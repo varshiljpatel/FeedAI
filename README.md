@@ -1,4 +1,4 @@
-<h2>Feed_AI ⚪<h2>
+## Feed_AI ⚪
 <h3>Usage:</h3>
 
 <p>Add required env variables in <code>.env</code> files.</p>
@@ -36,7 +36,6 @@
 ```
 feed_ai --file &lt;filename&gt; --issue &lt;issue&gt;
 ```
-<br />
 
 <h5>Options:</h5>
 
