@@ -3,7 +3,7 @@ import meow from "meow";
 export default meow(
     `
   Usage
-    $ mycli --file <filename> --issue <text>
+    $ feed_ai --file <filename> --issue <text>
 
   Options
     --file, -f  Filename
