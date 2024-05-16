@@ -49,3 +49,7 @@
   <li><i>&lt;issue&gt;</i>:</li>
   <p class="gray">Issue to be occured in &lt;filename&gt;.</p>
 </ul>
+
+<h3>Example:</h3>
+
+<code>feed_ai --file demo.js --issue "',' expected"</code>
