@@ -26,13 +26,13 @@ function readFileContent(filename) {
 }
 
 function displayLoadingAnimation() {
-    const animation = "|/-\\";
+    const animation = ["-  ", " - ", "  -"];
     let i = 0;
     return setInterval(() => {
         process.stdout.write(
-            `\r${chalk.yellow(animation[i++ % animation.length])} Writing to file...`,
+            `\r${chalk.bold(animation[i++ % animation.length])} Loading...`,
         );
-    }, 100);
+    }, 250);
 }
 
 if (cli.flags.file && cli.flags.issue) {
@@ -44,7 +44,7 @@ if (cli.flags.file && cli.flags.issue) {
     const loadingInterval = displayLoadingAnimation();
 
     setTimeout(async () => {
-        const res = await client.generate({
+        const res = await client.solve({
             code: fileContent,
             issue: issue,
         });
