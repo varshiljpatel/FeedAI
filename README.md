@@ -34,7 +34,7 @@
 <h3>Execute:</h3>
 
 ```
-feed_ai --file &lt;filename&gt; --issue &lt;issue&gt;
+feed_ai --file <filename> --issue <issue>
 ```
 
 <h5>Options:</h5>
@@ -49,7 +49,9 @@ feed_ai --file &lt;filename&gt; --issue &lt;issue&gt;
 
 <h3>Example:</h3>
 
-<code>feed_ai --file demo.js --issue "',' expected"</code>
+```
+feed_ai --file demo.js --issue "',' expected"
+```
 
 <h3>Help:</h3>
 
@@ -57,7 +59,7 @@ feed_ai --file &lt;filename&gt; --issue &lt;issue&gt;
 
 ```
 Usage
-  $ feed_ai --file &lt;filename> --issue &lt;issue>
+  $ feed_ai --file <filename> --issue <issue>
 
 Options
   --file, -f  Filename
