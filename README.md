@@ -18,7 +18,7 @@
   </li>
 </ul>
 
-<h3>Link with cli</h3>
+<h3>Link with cli:</h3>
 
 <p>Run below command for link binary with cli to access feed from anywhere.</p>
 
