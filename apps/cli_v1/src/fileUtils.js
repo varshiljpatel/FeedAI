@@ -14,7 +14,7 @@ export function readFileContent(filename) {
                 `File \"${import.meta.dirname + filename}\" doesn't exist.`,
             );
         }
-        throw new Error(`Error reading file "${filename}": ${error}`);
+        console.log(`Error reading file "${filename}": ${error}`);
     }
 }
 
