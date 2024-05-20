@@ -1,6 +1,11 @@
-export interface IGenerateBody {
+export interface ISolveBody {
     code: string;
     issue: string;
+}
+
+export interface IGenerateBody {
+    prompt: string;
+    language?: string;
 }
 
 export interface ISendResponse {
