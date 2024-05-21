@@ -2,7 +2,7 @@
 <h3>Usage:</h3>
 
 <p>Add required env variables in <code>.env</code> files.</p>
-<p>Navigato to engine directory and run the engine</p>
+<p>Navigate to engine directory and run the engine</p>
 
 <ul>
   <li>
