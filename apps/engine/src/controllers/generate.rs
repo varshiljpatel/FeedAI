@@ -5,12 +5,12 @@ use crate::repository::gen_ai;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Prompt {
-    code: String,
-    issue: String
+    prompt: String,
+    language: Option<String>
 }
 
 pub async fn handle_generate(Json(body): Json<Prompt>) -> Json<Response> {
-  if body.code.trim().is_empty() || body.issue.trim().is_empty() {
+  if body.prompt.trim().is_empty() {
     return send_response(Response {
       status: 400,
       success: false,
@@ -18,15 +18,15 @@ pub async fn handle_generate(Json(body): Json<Prompt>) -> Json<Response> {
       response: None
     });
   }
-  let updataed_prompt: String = generate_prompt(body.code, body.issue);
+  let updataed_prompt: String = generate_prompt(body.prompt, body.language);
 
   // Generate an api response from gen_ai repository
   let api_response = gen_ai::generate_response_from_prompt(updataed_prompt).await;
 
   send_response(Response {
-    message: None,
+    message: Some(String::from("Code generated successfully!")),
     status: 200,
-    success: false,
+    success: true,
     response: Some(SendResponse {
       text: Some(String::from(api_response))
     })

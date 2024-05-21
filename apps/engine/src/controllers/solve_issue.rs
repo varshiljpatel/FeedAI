@@ -1,6 +1,6 @@
 use axum::Json;
 use serde::{Deserialize, Serialize};
-use crate::actions::{generate_prompt::generate_prompt, response::{send_response, Response, SendResponse}};
+use crate::actions::{generate_prompt::solve_issue_prompt, response::{send_response, Response, SendResponse}};
 use crate::repository::gen_ai;
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -18,7 +18,7 @@ pub async fn handle_solve(Json(body): Json<Prompt>) -> Json<Response> {
       response: None
     });
   }
-  let updataed_prompt: String = generate_prompt(body.code, body.issue);
+  let updataed_prompt: String = solve_issue_prompt(body.code, body.issue);
 
   // Generate an api response from gen_ai repository
   let api_response = gen_ai::generate_response_from_prompt(updataed_prompt).await;
