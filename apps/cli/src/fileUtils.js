@@ -1,29 +1,32 @@
 import fs from "fs";
 import chalk from "chalk";
 
-export function writeIssueToFile(filename, issue) {
-    fs.writeFileSync(filename, issue);
+export async function writeIssueToFile(filename, data) {
+    fs.writeFileSync(filename, data);
+    return;
 }
 
 export function readFileContent(filename) {
     try {
-        return fs.readFileSync(filename, "utf-8");
+        fs.readFileSync(filename, "utf-8");
     } catch (error) {
         if (error.code === "ENOENT") {
             console.log(
                 `File \"${import.meta.dirname + filename}\" doesn't exist.`,
             );
+            return process.exit(1);
+        } else {
+            console.log(`Error reading file "${filename}": ${error.message}`);
         }
-        console.log(`Error reading file "${filename}": ${error}`);
     }
 }
 
 export function displayLoadingAnimation() {
-    const animation = ["-  ", " - ", "  -"];
+    const animation1 = ["-  ", " - ", "  -"];
     let i = 0;
     return setInterval(() => {
         process.stdout.write(
-            `\r${chalk.bold(animation[i++ % animation.length])} Loading...`,
+            `\r[ ${chalk.bold(animation1[i++ % animation1.length])} ] Loading...`,
         );
     }, 250);
 }

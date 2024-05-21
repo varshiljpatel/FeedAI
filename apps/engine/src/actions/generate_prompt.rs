@@ -6,7 +6,7 @@
 pub fn generate_prompt(prompt: String, language: Option<String>) -> String {
     let lang = language.unwrap_or_else(|| "javascript".to_string());
     format!(
-        "Generate a code in a single string for prompt\nPrompt:\n{prompt} in {lang:?} language.\nNote: response does not contain any text explanation and give only code no any explanation text."
+        "Generate a code for prompt\nPrompt:\n{prompt} in {lang:?} language.\nNote: response does not contain any text explanation and give only code no any explanation text.\nResponse must be a single string between ```{lang} ```."
     )
 }
 
@@ -16,6 +16,6 @@ pub fn generate_prompt(prompt: String, language: Option<String>) -> String {
  */
 pub fn solve_issue_prompt(code: String, issue: String) -> String {
     format!(
-        "code:\n{code:?}\nissue:\n{issue:?}\nFind issue in provided code and solve issue and rewrite this code again.\nNote: response does not contain any text explaination and give only code no any explaination text."
+        "code:\n{code:?}\nissue:\n{issue:?}\nFind issue in provided code and solve issue and rewrite this code again.\nNote: response does not contain any text explaination and give only code no any explaination text.\nResponse must be a single string between ``` ```"
     )
 }
