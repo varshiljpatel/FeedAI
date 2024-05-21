@@ -24,7 +24,7 @@
 
 <ul>
   <li>
-    <code>cd apps/cli_v1</code>
+    <code>cd apps/cli</code>
   </li>
   <li>
     <code>npm link</code>
@@ -34,34 +34,58 @@
 <h3>Execute:</h3>
 
 ```
-feed_ai --file <filename> --issue <issue>
+feed <service> --option <text>
 ```
 
 <h5>Options:</h5>
 
 <ul>
   <li><i>&lt;filename&gt;</i>:</li>
-  <p class="gray">Filename in which error is occured.</p>
-  <p style="color: yellow;">Note: mentioning file extension is required.</p>
+  <p>Filename in which error is occured.</p=>
+  <p>Note: mentioning file extension is required.</p>
+
   <li><i>&lt;issue&gt;</i>:</li>
-  <p class="gray">Issue to be occured in &lt;filename&gt;.</p>
+  <p>Issue to be occured in &lt;filename&gt;.</p>
+
+  <li><i>&lt;language&gt;</i>:</li>
+  <p>It is optional flag for generated code language.</p>
+
+  <li><i>&lt;prompt&gt;</i>:</li>
+  <p>Prompt to generate code for purpose.</p>
 </ul>
 
 <h3>Example:</h3>
 
+-   <h5>solve:</h5>
+    <p>In this example solving problem "," expected in ./demo.js file.</p>
+
 ```
-feed_ai --file demo.js --issue "',' expected"
+feed solve --file demo.js --issue "',' expected"
+```
+
+-   <h5>generate:</h5>
+    <p>In this example generating code for adding two numbers in function using rust as a language.</p>
+
+```
+feed generate --file demo.js --prompt "Adding two numbers using function" --language "rust""
 ```
 
 <h3>Help:</h3>
 
-<p>Run <code>feed_ai --help</code> command for getting help.</p>
+<p>Run <code>feed --help</code> command for getting help.</p>
 
 ```
 Usage
-  $ feed_ai --file <filename> --issue <issue>
+  $ feed <service> --file <filename> --issue <text>
+  $ feed <service> --file <filename> --prompt <text>
 
 Options
-  --file, -f  Filename
-  --issue, -i  Issue to write in the file
+  --file, -f  Filename.
+  --issue, -i  Issue to write in the file.
+  --language, -l  Code generation language.
+  --prompt, -p  Prompt for generation of code.
+
+Arguments
+  generate: For generating code in file.
+  solve: For solving code in file.
 ```
