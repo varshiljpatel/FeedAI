@@ -21,12 +21,12 @@ export function readFileContent(filename) {
     }
 }
 
-export function displayLoadingAnimation() {
+export function displayLoadingAnimation(loading = "Loading") {
     const animation1 = ["-  ", " - ", "  -"];
     let i = 0;
     return setInterval(() => {
         process.stdout.write(
-            `\r[ ${chalk.bold(animation1[i++ % animation1.length])} ] Loading...`,
+            `\r[ ${chalk.bold(animation1[i++ % animation1.length])} ] ${loading}...`,
         );
     }, 250);
 }
