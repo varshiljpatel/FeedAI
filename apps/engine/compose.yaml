@@ -1,0 +1,6 @@
+version: "3"
+services:
+    feed_ai_engine:
+        build: .
+        ports:
+            - "3110:3110"

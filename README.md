@@ -13,7 +13,7 @@
   </li>
   <li>
     <code>
-    cargo run
+    docker compose up --build
     </code>
   </li>
 </ul>
