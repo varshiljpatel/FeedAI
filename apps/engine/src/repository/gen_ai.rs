@@ -1,5 +1,8 @@
 use reqwest::Client;
-use crate::repository::constants::{ GENAI_BASE_URL, GENAI_API_VERSION, GENAI_MODEL };
+use crate::{
+    actions::filter_prompt::filter,
+    repository::constants::{ GENAI_API_VERSION, GENAI_BASE_URL, GENAI_MODEL },
+};
 use serde::Deserialize;
 use serde_json::json;
 
@@ -76,7 +79,11 @@ pub async fn generate_response_from_prompt(prompt: String) -> String {
     let api_response = response.json::<ApiResponse>().await;
 
     match api_response {
-        Ok(api_response) => return api_response.candidates[0].content.parts[0].text.to_string(),
-        Err(e) => return format!("Response is unavailabe due to some errors: {:?}", e)
+        Ok(api_response) => {
+            return filter(api_response.candidates[0].content.parts[0].text.to_string());
+        }
+        Err(e) => {
+            return format!("Response is unavailabe due to some errors: {:?}", e);
+        }
     }
 }

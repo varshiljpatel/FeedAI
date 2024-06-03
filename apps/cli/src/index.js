@@ -27,10 +27,12 @@ export async function solveIssue() {
                     writeIssueToFile(file, res.content.text);
                     clearInterval(loadingInterval);
                     console.log(
-                        `\r${chalk.greenBright.black("Success:")} Successfully solved issue \"${issue.slice(0, 10) + "..."}\" in file \"${file}\"`,
+                        `\r${chalk.greenBright("Success:")} Successfully solved issue \"${issue.slice(0, 10) + "..."}\" in file \"${file}\"`,
                     );
                 } catch (error) {
-                    console.error("\rSomething went wrong:", error);
+                    console.error(
+                        `\r${chalk.red("Error:")}Something went wrong: ${error.message}`,
+                    );
                 }
             }, 2000);
         } else {
@@ -53,10 +55,12 @@ export async function solveIssue() {
                     writeIssueToFile(file, res.content.text);
                     clearInterval(loadingInterval);
                     console.log(
-                        `\r${chalk.greenBright.black("Success:")} Successfully generated code for \"${prompt.slice(0, 10) + "..."}\" in file \"${file}\"`,
+                        `\r${chalk.greenBright("Success:")} Successfully generated code for \"${prompt.slice(0, 10) + "..."}\" in file \"${file}\"`,
                     );
                 } catch (error) {
-                    console.error("\rSomething went wrong:", error.message);
+                    console.error(
+                        `\r${chalk.red("Error:")}Something went wrong: ${error.message}`,
+                    );
                 }
             }, 2000);
         } else {
