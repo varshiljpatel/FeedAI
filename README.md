@@ -48,7 +48,7 @@ feed <service> --option <text>
   <p>Issue to be occured in &lt;filename&gt;.</p>
 
   <li><i>&lt;language&gt;</i>:</li>
-  <p>It is optional flag for generated code language.</p>
+  <p>It is optional flag for generated code language. ```javascript``` by default.</p>
 
   <li><i>&lt;prompt&gt;</i>:</li>
   <p>Prompt to generate code for purpose.</p>
@@ -67,7 +67,7 @@ feed solve --file demo.js --issue "',' expected"
     <p>In this example generating code for adding two numbers in function using rust as a language.</p>
 
 ```
-feed generate --file demo.js --prompt "Adding two numbers using function" --language "rust""
+feed generate --file demo.rs --prompt "Adding two numbers using function" --language "rust"
 ```
 
 <h3>Help:</h3>
