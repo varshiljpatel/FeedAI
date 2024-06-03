@@ -37,7 +37,7 @@
 feed <service> --option <text>
 ```
 
-<h5>Options:</h5>
+<h3>Options:</h3>
 
 <ul>
   <li><i>&lt;filename&gt;</i>:</li>
