@@ -48,7 +48,7 @@ feed <service> --option <text>
   <p>Issue to be occured in &lt;filename&gt;.</p>
 
   <li><i>&lt;language&gt;</i>:</li>
-  <p>It is optional flag for generated code language. ```javascript``` by default.</p>
+  <p>It is optional flag for generated code language. <code>javascript</code> by default.</p>
 
   <li><i>&lt;prompt&gt;</i>:</li>
   <p>Prompt to generate code for purpose.</p>
