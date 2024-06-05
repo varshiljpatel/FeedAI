@@ -52,21 +52,25 @@ feed <service> --option <text>
   <p>Prompt to generate code for purpose.</p>
 </ul>
 
-<h3>Example:</h3>
+<h3>Arguments:</h3>
 
--   <h5>solve:</h5>
+-   <h3>solve:</h3>
     <p>In this example solving problem "," expected in ./demo.js file.</p>
 
-```
-feed solve --file demo.js --issue "',' expected"
-```
+    **example**
 
--   <h5>generate:</h5>
+    ```
+    feed solve --file demo.js --issue "',' expected"
+    ```
+
+-   <h3>generate:</h3>
     <p>In this example generating code for adding two numbers in function using rust as a language.</p>
 
-```
-feed generate --file demo.rs --prompt "Adding two numbers using function" --language "rust"
-```
+    **example**
+
+    ```
+    feed generate --file demo.rs --prompt "Adding two numbers using function" --language "rust"
+    ```
 
 <h3>Help:</h3>
 
