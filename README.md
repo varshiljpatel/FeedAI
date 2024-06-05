@@ -4,19 +4,17 @@
 <p>Add required env variables in <code>.env</code> files.</p>
 <p>Navigate to engine directory and run the engine</p>
 
-<ul>
-  <li>
-    <code>
-    cd apps/engine
-    </code>
-  <br />
-  </li>
-  <li>
-    <code>
+-   `cd apps/engine`
+-   > Note: currently not supported!
+    ```
     docker compose up --build
-    </code>
-  </li>
-</ul>
+    ```
+    or run below commands step by step
+    ```
+    cargo build --release --locked
+    cd target/release
+    ./engine
+    ```
 
 <h3>Link with cli:</h3>
 

@@ -1,6 +1,7 @@
 {
     "name": "feed-ai",
     "version": "1",
+    "type": "module",
     "keywords": [
         "ai",
         "coder",
