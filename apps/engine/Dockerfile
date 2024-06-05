@@ -1,23 +1,21 @@
 FROM rust:latest as builder
 
-WORKDIR /usr/src/feed
+# RUN apt-get update && apt-get install -y libssl-dev
+RUN apt-get update && apt-get install -y libgconf-2-4
 
-RUN apt-get update && \
-    apt-get install -y libssl-dev
+RUN ldconfig
 
-COPY Cargo.toml Cargo.lock ./
-RUN mkdir src && touch src/lib.rs
-RUN cargo build --release
+WORKDIR /app
 
 COPY . .
-RUN cargo build --release
+RUN cargo build --release --locked
 
-FROM debian:buster-slim
+FROM debian:bullseye-slim
 
 EXPOSE 3110
 
-WORKDIR /usr/bin/
+WORKDIR /app
 
-COPY --from=builder /usr/src/feed/target/release/engine .
+COPY --from=builder /app/target/release/engine .
 
 CMD ["./engine"]

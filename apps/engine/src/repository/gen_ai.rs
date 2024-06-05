@@ -1,6 +1,6 @@
 use reqwest::Client;
 use crate::{
-    actions::filter_prompt::filter,
+    actions::filter_response::filter,
     repository::constants::{ GENAI_API_VERSION, GENAI_BASE_URL, GENAI_MODEL },
 };
 use serde::Deserialize;

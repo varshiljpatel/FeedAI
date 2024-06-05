@@ -183,6 +183,7 @@ version = "0.1.0"
 dependencies = [
  "axum",
  "dotenv",
+ "openssl",
  "reqwest",
  "serde",
  "serde_json",
