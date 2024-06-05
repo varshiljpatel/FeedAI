@@ -57,7 +57,7 @@ feed <service> --option <text>
 -   <h3>solve:</h3>
     <p>In this example solving problem "," expected in ./demo.js file.</p>
 
-    **example**
+    **e.g.**
 
     ```
     feed solve --file demo.js --issue "',' expected"
@@ -66,7 +66,7 @@ feed <service> --option <text>
 -   <h3>generate:</h3>
     <p>In this example generating code for adding two numbers in function using rust as a language.</p>
 
-    **example**
+    **e.g.**
 
     ```
     feed generate --file demo.rs --prompt "Adding two numbers using function" --language "rust"
