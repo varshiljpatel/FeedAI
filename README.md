@@ -5,7 +5,7 @@
 <p>Navigate to engine directory and run the engine</p>
 
 -   `cd apps/engine`
--   > Note: currently not supported!
+-   >   Note: currently not supported!
     ```
     docker compose up --build
     ```
