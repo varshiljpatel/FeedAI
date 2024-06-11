@@ -1,0 +1,116 @@
+<mxfile host="65bd71144e">
+    <diagram id="Ns6qJdVLNHjNikVVRRB4" name="Page-1">
+        <mxGraphModel dx="1066" dy="666" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="19" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontColor=#FFFFFF;" edge="1" parent="1" source="14" target="18">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="rounded=0;whiteSpace=wrap;html=1;gradientColor=none;fillColor=none;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="150" width="240" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="&amp;gt;_ CLI" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="150" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="&lt;font face=&quot;Lucida Console&quot;&gt;feed generate -f file.js -p prompt&lt;/font&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#00CC66;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="180" width="180" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontColor=#FFFFFF;" edge="1" parent="1" source="18" target="20">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontColor=#FFFFFF;" edge="1" parent="1" source="18" target="14">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="390" y="100"/>
+                            <mxPoint x="150" y="100"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="18" value="Feed SDK" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontColor=#FFFFFF;fillColor=none;gradientColor=none;fontStyle=0" vertex="1" parent="1">
+                    <mxGeometry x="330" y="195" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Helvetica;fontColor=#FFFFFF;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="20" target="22">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="390" y="540" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="390" y="530"/>
+                            <mxPoint x="130" y="530"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="33" style="edgeStyle=none;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontColor=#FFFFFF;" edge="1" parent="1" source="20" target="18">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="435" y="320"/>
+                            <mxPoint x="490" y="320"/>
+                            <mxPoint x="490" y="225"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="44" style="edgeStyle=none;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontColor=#FFFFFF;" edge="1" parent="1" source="20" target="43">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="500" y="383"/>
+                            <mxPoint x="500" y="330"/>
+                            <mxPoint x="590" y="330"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" value="Feed engine(rust)" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontFamily=Helvetica;fontColor=#FFFFFF;fillColor=none;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="360" width="180" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" style="edgeStyle=none;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;fontFamily=Helvetica;fontColor=#FFFFFF;" edge="1" parent="1" source="22" target="20">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="80" y="560"/>
+                            <mxPoint x="435" y="560"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" value="Gemini model 1.5 Flash" style="swimlane;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontColor=#FFFFFF;fillColor=none;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="345" width="200" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="" style="shape=switch;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontColor=#FFFFFF;fillColor=none;gradientColor=none;direction=south;rotation=45;" vertex="1" parent="22">
+                    <mxGeometry x="87.5" y="54.89" width="25" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="Sending prompt" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="196" y="500" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="Getting response" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="174" y="560" width="150" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="Sending&lt;br&gt;response" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="500" y="256" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="Send code based on service" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="246" y="55" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="code" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontColor=#FFFFFF;fillColor=none;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="188" y="55" width="50" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Helvetica;fontColor=#FFFFFF;" edge="1" parent="1" source="38" target="39">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="code" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontColor=#FFFFFF;fillColor=none;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="65" y="237" width="50" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="file.js" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Helvetica;fontColor=#FFFFFF;fillColor=none;gradientColor=none;size=12;" vertex="1" parent="1">
+                    <mxGeometry x="181" y="224.5" width="44" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;fontFamily=Helvetica;fontColor=#FFFFFF;" edge="1" parent="1" source="43" target="20">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="587" y="480"/>
+                            <mxPoint x="500" y="480"/>
+                            <mxPoint x="500" y="430"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="43" value="Refine&lt;br&gt;Gemini&lt;br&gt;code" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Helvetica;fontColor=#FFFFFF;fillColor=none;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="540" y="357.5" width="95" height="95" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
